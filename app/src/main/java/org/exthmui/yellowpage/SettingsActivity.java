@@ -133,9 +133,7 @@ public class SettingsActivity extends ExthmCollapsingToolbarBaseActivity {
             intent.setAction(Intent.ACTION_VIEW);
             Uri content_url = Uri.parse(Constants.YELLOWPAGE_CONTRIBUTORS_URL);
             intent.setData(content_url);
-            if (intent.resolveActivity(getPackageManager()) != null) {
-                startActivity(intent);
-            }
+            startActivity(intent);
             return true;
         });
 
